@@ -12,10 +12,6 @@ module "zone" {
   name                  = each.value["name"]
   slug                  = each.value["slug"]
   management_group_name = each.value["management_group_name"]
-
-  providers = {
-    github = github
-  }
 }
 
 output "zones" {
