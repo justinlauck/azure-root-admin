@@ -5,7 +5,7 @@
 # create github rep
 
 resource "github_repository" "repo" {
-  name        = "ops-infra-azure-${var.slug}-admin"
+  name        = "azure-${var.slug}-admin"
   description = "Terraform for deploying the ${var.name}"
   visibility  = "private"
 }
