@@ -7,7 +7,7 @@
 resource "github_repository" "repo" {
   name        = "azure-${var.slug}-admin"
   description = "Terraform for deploying the ${var.name}"
-  visibility  = "private"
+  visibility  = "public"
 }
 
 # add the github actions secrets
